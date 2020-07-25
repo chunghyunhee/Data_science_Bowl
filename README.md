@@ -23,10 +23,10 @@
 high-quality educational media and learning process.
 
 # approach
-1. validation strategy
+**1. validation strategy**
 - K=5로 하여 KFold group을 installation_id를 기반으로 그룹지었다. 
 
-2. feature engineering
+**2. feature engineering8**
 - world를 numerical 형태로 바꿔줬다. 
 - add corresponing world of assesment 
 - accumulated number of different previous assessment
@@ -38,9 +38,9 @@ accuracy_group assessment_accuracy_map
 - no need to feature scaling as tree_based models are not affected by
 different scales of features.
 
-3. feature selection
+**3. feature selection**
 - eliminate high correlated features ( >0.99 correlated coeff)
 
-4. modeling 
+**4. modeling** 
 - ensemble LightGBM, XGBoost, CatBoost, and Neural Network
 with 0.25 weighted each.
